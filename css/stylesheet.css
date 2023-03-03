@@ -1,0 +1,203 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+    /*
+    <hidden></hidden>
+    hidden
+    
+    <div class="hidden"></div>
+    .hidden
+    
+    <div id="hidden"></div>
+    #hidden */
+    
+.hidden {
+    display: none;
+}
+    
+html, body {
+    height: 100%;
+}
+    
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+    
+    /* main header rules */
+header {
+    background-color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+    
+#marvel-logo {
+    position: relative;
+    left: 170px;
+    width: 300px;
+    padding: 5px 0;
+}
+
+#mushroom {
+    position: relative;
+    left: 740px;
+    width: 150px;
+    padding: 10px;
+}
+
+#dot {
+    position: relative;
+    top: 50px;
+    left: 450px;
+    width: 150px;
+    padding: 10px;
+}
+    
+#character_nav {
+    text-align: center;
+    background-color: #675050;
+    
+    background-image: url('../images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+    
+.characters {
+    list-style-type: none;
+}
+    
+.characters li {
+    position: relative;
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+    
+    background-color: black;
+    text-align: left;
+    cursor: pointer;
+}
+    
+.characters li h5 {
+    position: relative;
+    color: white;
+    padding: 12px 8px;
+}
+    
+.red_bumper {
+    width: 100%;
+    height: 6px;
+    background-color: red;
+}
+    
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/marvelSprites.jpg);
+}
+    
+#clint { background-position: -300px 0; }
+#hulk { background-position: -450px 0; }
+#thor { background-position: -600px 0; }
+#widow { background-position: -750px 0; }
+    
+.sprite:hover {
+    background-position-y: -150px !important;
+}
+    
+article {
+    padding: 20px;
+}
+    
+article h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+    
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+article p b {
+    font-size: 24px;
+}
+    
+    /* footer rules */
+footer {
+    color: white;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+    
+.sticky_footer {
+    background-color: rgb(40,37,37);
+    height: 80px;
+}
+    
+    /* lightbox rules here */
+.lightbox {
+    background-color: rgba(0,0,0,0.85);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100vw; /* vw viewport width -> screen width */
+    height: 100vh; /* vh viewport height -> screen height */
+    
+    z-index: 2;
+    
+    background-image: url('../images/Cap_LB_Bg.png');
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    
+    display: none;
+}
+    
+#lightbox4 {background-image: url('../images/Thor_LB_Bg.png');}
+    
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+    
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+    
+.lb_text, .lb_heading { text-align: left; }
+    
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+    
+.attack {
+    width: 15px;
+}
+
+.bars {
+    padding: 0;
+}
+
+.lightbox:target { display: block; }
